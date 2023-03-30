@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Antivirus</th>
+        <th>Result</th>
+    </tr>
+    {% for antivirus, result in result['results']['scans'].items() %}
+    <tr>
+        <td>{{ antivirus }}</td>
+        <td>{{ result['result'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
